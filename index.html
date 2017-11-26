@@ -1,0 +1,254 @@
+<!Doctype HTML>
+
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lobster" rel="stylesheet">
+<link href="logo" rel="shortcut icon" type="image/x-icon" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width" />
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="CS3121 Home Page">
+	<meta name="keywords" content="HTML5">
+
+	<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="ss.js"></script>
+
+	<title>Jeffrey Vang</title>
+</head>
+
+<body onload="init()" onResize="adjustNav()">
+	<div id="wrapper">
+		<header id="main_header">
+			<img id="logo" src="logo" alt="logo" width="175" height="200">
+			<h1>Jeffrey Vang</h1>
+		</header>
+		<div id="qotd">
+			<h2>Quote of the Day:</h2>
+			<p class="quote">"Create a life that you don't need to get away from."</p>
+		</div>
+
+		<nav id="navBar">
+			<ul>
+				<li><button id="profileBtn" onmouseover="hovered('profileImg')" onmouseout="notHovered('profileImg')" onclick="goTo('profile')">
+					<img id="profileImg" src=""  alt="">
+					<p class="btnNames" >Profile</p>
+				</button></li>
+
+				<li><button id="resumeBtn" onmouseover="hovered('resumeImg')" onmouseout="notHovered('resumeImg')" onclick="goTo('resume')">
+					<img id="resumeImg" src="" alt="" >
+					<p class="btnNames">Resume</p>
+				</button></li>
+
+				<li><button id="projectBtn" onmouseover="hovered('projectImg')" onmouseout="notHovered('projectImg')" onclick="goTo('projects')">
+					<img id="projectImg" src=""  alt=""  >
+					<p class="btnNames">Projects</p>
+					</button></li>
+
+				<li><button id="albumBtn" onmouseover="hovered('albumImg')" onmouseout="notHovered('albumImg')" onclick="goTo('album')">
+					<img id="albumImg" src=""  alt="" >
+					<p class="btnNames">Album</p>
+				</button></li>
+
+				<li><button id="blogBtn" onmouseover="hovered('blogImg')" onmouseout="notHovered('blogImg')" onclick="goTo('blog')">
+					<img id="blogImg" src=""  alt="" >
+					<p class="btnNames">Blog</p>
+				</button></li>
+
+				<li><button id="contactBtn" onmouseover="hovered('contactImg')" onmouseout="notHovered('contactImg')" onclick="goTo('contact')">
+					<img id="contactImg" src=""  alt="" >
+					<p class="btnNames">Contact</p>
+				</button></li>
+
+				<li><button id="burger" name="show" onclick="displayNav()">
+				<div id="burgerBox">
+					<div id="burgerIcon">
+					<div class="burgerLine"></div>
+					<div class="burgerLine"></div>
+					<div class="burgerLine"></div>
+				</div>
+				</div>
+				</button></li>
+			</ul>
+		</nav>
+
+
+		<!--Section-->
+		<div class="section" id="profile">
+			<h2>Profile</h2>
+			<article>
+				<div id="profileBox">
+					<div class="profileRow">
+					<div id="aboutme">
+						<img id="professional" src="Professional.jpg" alt="Jeff's Profile Photoshoot">
+						<ul>
+							<li><span class="sectionParagraph_type_1"><strong>Nickname:</strong></span> Jeff Vang</li>
+							<li><span class="sectionParagraph_type_1"><strong>Age:</strong></span> 21</li>
+							<li><span class="sectionParagraph_type_1"><strong>Hometown:</strong></span> Brooklyn Park, MN</li>
+							<li><span class="sectionParagraph_type_1"><strong>Passion:</strong></span> Developer, Volleyball, Football</li>
+						</ul>
+					</div>
+					<div id="intro">
+						<p class="sectionParagraph_type_1">Hello, my name is Jeff Vang. I was born in Brooklyn Park, MN, an intermediate sized suburban city located just north of Minneapolis, MN
+						I believe that our minds are capable of understanding and creating what we can imagine to exist. Technology
+						is the growing future and as we discover the dimensions of our minds, so to do we expand the dimensions
+						of existing technology.</p>
+						<p class="sectionParagraph_type_1">I am student at the Univeristy of Minnesota Duluth studying in Computer Information Systems. Being a developer has given me inspiration to contribute to the new technologies of today. I love work both independently and in teams to increase efficiency
+						and productivity.</p>
+					</div>
+				</div>
+				</div>
+			</article>
+		</div>
+
+		<!--Section-->
+		<div class="section" id="resume">
+			<h2><a href="C:\Users\Jeff Vang\Desktop\Final Project\Tech Resume" download>Resume</a></h2>
+			<article>
+				<div id="resumeBox">
+						<h3>Education</h3>
+				<div id="resumeRow1">
+						<div class="resumeDetail">
+						<h4> University of Minnesota Duluth, Duluth, MN</h4>
+						<p class="sectionParagraph_type_2">Computer Information Systems B.S.,  May 2018</p>
+						<p class="sectionParagraph_type_3">Courses focused on backend development in the languages C++ and Java.
+							Experience in Android mobile development and website creation in HTML, CSS and Javascript.</p>
+						</div>
+							<img id="Bulldog" alt="UMDBulldog" src="https://upload.wikimedia.org/wikipedia/en/0/08/UMDChamp1.png">
+					</div>
+					<h3>Experience</h3>
+					<div id="resumeRow2">
+						<div class="resumeDetail2">
+							<h4> C.H. Robinson</h4>
+							<p class="sectionParagraph_type_2">Intern Developer</p>
+							<p class="sectionParagraph_type_3">I had the opportunity to work in development teams in an Agile environment.
+								Developed API's that pulled data from  relational databases. Launched a PAPS system and worked an Angular framework and C# backend development. Also worked with Microsoft systems.</p>
+							</div>
+							<div class="resumeDetail3">
+								<h4>Information Technology Systems & Services</h4>
+								<p class="sectionParagraph_type_2">Tech Consultant</p>
+								<p class="sectionParagraph_type_3">Diagnosing and helping students with computer problems is one of the
+								most satisfying short term accomplishments one can feel during a normal day. I have experienced
+								both unusual and normal problems that students often stumble upon at any given time of the year. Computer triage
+								is a great tool that can help when technology isn't behaving the way it is suppose to be.
+								</p></div>
+						</div>
+					</div>
+			</article>
+		</div>
+
+		<!--Section-->
+		<div class="section" id="projects">
+			<h2>Projects</h2>
+			<article>
+				<div id="projectBox">
+					<div class="projectRow">
+					<div class="project">
+						<img id="greenhulk" alt="green hulk" src="http://2.bp.blogspot.com/-YCYMTGc2Mc4/VMu_B39cE8I/AAAAAAAAP6w/sjIOeSiWVlg/s1600/the%2Bincredible%2Bhulk%2B1.jpg">
+						<canvas id="canvas" onmouseover= "showOriginalHulk()" style="margin-top = 10">
+						</canvas>
+						<button id="hulkBtn" onclick="invert()">Double click to see Hulk Change</button>
+					</div>
+
+					<div class="project">
+						<canvas id="ssCanvas" style="margin-top = 10">
+						</canvas>
+						<button id="ssBtn" onclick="play(this)">Play Solar System</button>
+				  </div>
+				</div>
+				</div>
+			</article>
+		</div>
+
+		<!--Section-->
+		<div class="section" id="album">
+			<h2>Album</h2>
+			<article>
+				<div id="album_box">
+					<div class="album_row">
+						<div class="albumsection">
+							<div class="albumPhotos"><a href="https://www.instagram.com/p/BbijyV6gX2V/?taken-by=j_vang1022"><img src="girlsVB.jpg" style="width:75%; height: 100%;"></a></div>
+							<div class="albumPhotos"><a href="https://www.instagram.com/p/BbveIv6gEw2/?taken-by=j_vang1022"><img src="cultureshow.jpg" style="width:75%; height: 100%;"></a></div>
+							<div class="albumPhotos"><a href="https://www.instagram.com/p/BakXLZkgicf/?taken-by=j_vang1022"><img src="engerpark.jpg" style="width:75%; height: 100%;"></a></div>
+							</div>
+						</div>
+						<div class="album_row">
+							<div class="albumsection">
+								<div class="albumPhotos"><a href="https://www.instagram.com/p/BXQlmkJAJr1/?taken-by=j_vang1022"><img src="mn14.jpg" style="width:75%; height: 100%;"></a></div>
+								<div class="albumPhotos"><a href="https://www.instagram.com/p/BZK0a37A080/?taken-by=j_vang1022"><img src="studout.jpg" style="width:75%; height: 100%;"></a></div>
+								<div class="albumPhotos"><a href="https://www.instagram.com/p/BZur8IAgWog/?taken-by=j_vang1022"><img src="fishing.jpg" style="width:75%; height: 100%;"></a></div>
+								</div>
+							</div>
+							<div class="album_row">
+								<div class="albumsection">
+									<div class="albumPhotos"><a href="https://www.instagram.com/p/BbtD_8pAMUv/?taken-by=j_vang1022"><img src="christmas.jpg" style="width:75%; height: 100%;"></a></div>
+									<div class="albumPhotos"><a href="https://www.instagram.com/p/BbhrQphg_X2/?taken-by=j_vang1022"><img src="pinkvb.jpg" style="width:75%; height: 100%;"></a></div>
+									<div class="albumPhotos"><a href="https://www.instagram.com/p/BbuYpoVgipf/?taken-by=j_vang1022"><img src="duluthfambam.jpg" style="width:75%; height: 100%;"></a></div>
+									</div>
+								</div>
+				</div>
+			</article>
+		</div>
+
+		<!--Section-->
+		<div class="section" id="blog">
+			<h2>Blog</h2>
+			<article>
+				<div id="blogBox">
+					<div class="blogRow">
+					<div class="blog">
+						<a href = "https://www.linkedin.com/pulse/computer-repair-4-common-problems-solutions-windows-os-jeffrey-vang/">
+							<img class= "blogpicture" onmouseover="displayblog(true)"
+						onmouseout="displayblog(false)" src="https://data.whicdn.com/images/66683604/large.png"
+						 alt="macbook"></a>
+						 <div class="blogNameBox">
+						<div id="blogname" width = "100%" height = "50">4 Common Issues/4 Common Solutions</div>
+					</div>
+					</div>
+				</div>
+				<div class="blogRow">
+					<div class="blog">
+						<!--href here -->
+							<img class= "blogpicture" onmouseover="displayblog2(true)"
+						onmouseout="displayblog2(false)" src="https://cybermetrix.co.uk/wp-content/uploads/2017/06/microsoft.jpg"
+						 alt="microsoft">
+						 <div class="blogNameBox">
+						<div id="blogname2" width = "100%" height = "50">Coming Soon: Windows 10 vs High Sierra</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			</article>
+		</div>
+
+		<!--Section-->
+		<div class="section" id="contact">
+			<h2>Contact</h2>
+			<article>
+				<div id="contactme">
+				<h3>Trying to get a hold of me?</h3>
+				<p>Questions/Suggestions/Comments/Collaboration</p>
+				<p>Email me @ jvang1022@gmail.com or vang3096@gmail.com</p>
+			 </div>
+				<div id= "socialmedia">
+				<a href="https://www.facebook.com/ryukenn1022"><img width = "50" height= "50"alt="facebook"
+				src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-facebook-icon-logo-by-vexels.png"></a>
+				<a href="https://www.instagram.com/j_vang1022/"><img width = "50" height= "50"alt="instagram"
+				src="https://instagram-brand.com/wp-content/uploads/2016/11/app-icon2.png"></a>
+				<a href="https://github.com/vang3096"><img width = "50" height= "50"alt="github"
+				src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png"></a>
+				<a href="https://www.linkedin.com/in/jeffrey-vang-72a97ba9/"><img width = "50" height= "50"alt="linkedin"
+				src="http://www.capillaryconsulting.com/wp-content/uploads/2016/02/linkedin-logo.png"></a>
+
+				</div>
+			</article>
+		</div>
+
+		<footer id="footer">
+			Copyright &copy 2017 Jeffrey Vang
+		</footer>
+</body>
+
+</HTML>
